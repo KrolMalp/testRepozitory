@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>max min srednia</title>
+        <meta name="description" content="Interaktywny poradnik szybkiego startu dla Brackets.">
+        <link rel="stylesheet" href="main.css">
+        
+        <script>
+            function srednia(){
+                var a = document.getElementById("liczba1").value;
+                var b = document.getElementById("liczba2").value;
+                var c = document.getElementById("liczba3").value;
+                
+                sr = (Number(a)+Number(b)+Number(c))/3;
+                
+                document.getElementById('wynik').innerHTML = "wynik "+sr;
+            }
+        </script> 
+        
+    </head>
+    
+    
+    <body>
+        <h2>Obliczanie: średniej, max, min</h2>
+        <p>Podaj a <input type="number" id="liczba1"></p>
+        <p>Podaj b <input type="number" id="liczba2"></p>
+        <p>Podaj c <input type="number" id="liczba3"></p>
+        <input type="button" value="sr" id="sr" onclick="srednia()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="max" id="max" onclick="max()">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="min" id="min" onclick="min()">&nbsp;&nbsp;&nbsp;
+        Wynik: <p id="wynik"></p>
+    </body>
+        
+    
+    
+    
+</html>
